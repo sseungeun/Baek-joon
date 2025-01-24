@@ -36,3 +36,27 @@
 
  <p>첫째 줄에 게임의 상금을 출력 한다.</p>
 
+<h3>추가적 내용</h3>
+<pre>if(A!=B&&B!=C&A!=C) {
+			int sum;
+			if(A>B) {
+				if(C>A) {
+					sum=C;
+				}
+				else {
+					sum=A;
+				}
+		}
+			else {
+				if(C>B) {
+					sum=C;
+				}
+				else {
+					sum=B;
+				}
+			}
+			System.out.println(sum*100);
+		}
+</pre>
+<p>이 코드를 Math.max 로 사용하면 쉽게 변경 가능</p>
+<p>그리고 if문 쓸 때 구조를 잘 살펴주세요</p>
