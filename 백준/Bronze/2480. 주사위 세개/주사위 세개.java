@@ -7,24 +7,8 @@ public class Main{
 		int C=in.nextInt();
 		
 		if(A!=B&&B!=C&A!=C) {
-			int sum;
-			if(A>B) {
-				if(C>A) {
-					sum=C;
-				}
-				else {
-					sum=A;
-				}
-		}
-			else {
-				if(C>B) {
-					sum=C;
-				}
-				else {
-					sum=B;
-				}
-			}
-			System.out.println(sum*100);
+			int max=Math.max(A,Math.max(B, C));
+			System.out.println(max*100);
 		}
 		else {
 			if(A==B&&A==C) {
